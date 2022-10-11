@@ -3,10 +3,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="bg-Primary-light">
+    <div className="App shadow-large">
+      <header className="bg-primary-light">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="font-bold text-Secondary-dark">
+        <p className="font-bold text-secondary-dark leading-0 font-sf-pro-text-8 text-16 tracking-13">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
