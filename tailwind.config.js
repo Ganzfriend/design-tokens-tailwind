@@ -8,14 +8,24 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors,
-    boxShadow,
-    typography,
-    ...misc,
-    extend: {},
+    ...typography,
+    ...typography.headline,
+    extend: {
+      colors,
+      boxShadow,
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            ...typography,
+            ...typography.headline,
+          },
+        },
+      }),
+      ...misc,
+    },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
