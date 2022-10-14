@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App shadow-large">
+    <div className="App shadow-large pb-20">
       <header className="bg-secondary-light">
         <img src={logo} className="App-logo" alt="logo" />
         <p className="font-bold text-secondary-dark leading-0 font-sf-pro-text-8 text-16 tracking-13">
@@ -19,11 +19,12 @@ function App() {
           Learn React
         </a>
       </header>
-      <div>
-        <h1 className="h1-regular text-h1-regular headline-h1-regular heading-headline-h1-regular text-h1-regular font-h1-regular text-headline-h1-regular font-headline-h1-regular">
-          My test H1
-        </h1>
+      <div className="prose">
+        <h1>H1 regular</h1>
+        <h1 className="font-italicized h1-italic">H1 italic</h1>
+        <h1 className="font-bolded h1-bold">H1 bold</h1>
       </div>
+      <h1 className="bold-h1 h1-bold">Non-prose H1</h1>
     </div>
   );
 }
