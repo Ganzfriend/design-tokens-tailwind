@@ -7,8 +7,7 @@ const misc = require("./mui/misc");
 const theme = createTheme({
   palette: colors,
   typography: {
-    // ...typography,
-    h1: typography.headline.h1.regular,
+    ...typography.headline,
     ...typography.body,
     ...typography.subtitle,
     ...typography.caption,
