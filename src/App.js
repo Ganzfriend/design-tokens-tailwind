@@ -1,13 +1,15 @@
 import React from "react";
 import logo from "./logo.svg";
+import { Typography } from "@mui/material";
+
 import "./App.css";
 
 function App() {
   return (
-    <div className="App shadow-large pb-20">
-      <header className="bg-secondary-light">
+    <div className="App">
+      <header>
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="font-bold text-secondary-dark leading-0 font-sf-pro-text-8 text-16 tracking-13">
+        <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -19,12 +21,14 @@ function App() {
           Learn React
         </a>
       </header>
-      <div className="prose">
-        <h1>H1 regular</h1>
-        <h1 className="font-italicized h1-italic">H1 italic</h1>
-        <h1 className="font-bolded h1-bold">H1 bold</h1>
+      <div>
+        <Typography variant="h1" color="text.secondary">
+          H1 regular
+        </Typography>
+        <Typography variant="h1">H1 italic</Typography>
+        <h1>H1 bold</h1>
       </div>
-      <h1 className="bold-h1 h1-bold">Non-prose H1</h1>
+      <h1>Non-prose H1</h1>
     </div>
   );
 }
