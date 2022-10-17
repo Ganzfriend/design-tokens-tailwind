@@ -1,12 +1,12 @@
 import React from "react";
 import logo from "./logo.svg";
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <Box className="App" sx={{ pb: 20 }}>
       <header>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -21,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button>Button</Button>
       <Box
         sx={{
           display: "flex",
@@ -99,7 +100,7 @@ function App() {
       >
         <Typography variant="overline">Overline</Typography>
       </Box>
-    </div>
+    </Box>
   );
 }
 
