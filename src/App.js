@@ -28,7 +28,6 @@ function App() {
         <Typography variant="h1">H1 italic</Typography>
         <h1>H1 bold</h1>
       </div>
-      <h1>Non-prose H1</h1>
     </div>
   );
 }
