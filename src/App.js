@@ -7,7 +7,7 @@ function App() {
     <div className="App shadow-large pb-20">
       <header className="bg-secondary-light">
         <img src={logo} className="App-logo" alt="logo" />
-        <p className="font-bold text-secondary-dark leading-0 font-sf-pro-text-8 text-16 tracking-13">
+        <p className="text-secondary-dark leading-0 font-sf-pro-text-8 text-10 tracking-10">
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
@@ -19,12 +19,19 @@ function App() {
           Learn React
         </a>
       </header>
-      <div className="prose">
-        <h1>H1 regular</h1>
-        <h1 className="font-italicized h1-italic">H1 italic</h1>
-        <h1 className="font-bolded h1-bold">H1 bold</h1>
+      <div className="flex flex-col">
+        <h1>None of these are prose</h1>
+        <h1 className="h1 h1-italic">H1 italic</h1>
+        <h1 className="h1 h1-bold">H1 bold</h1>
+        <span className="body1">Body1</span>
+        <span className="body2">Body2</span>
+        <span className="subtitle1">Subtitle1</span>
+        <span className="subtitle2">Subtitle2</span>
+        <span className="subtitle2 subtitle2-semiBold">Subtitle2 SemiBold</span>
+        <span className="caption">Caption</span>
+        <span className="overline">Overline</span>
+        <button className="button">Button</button>
       </div>
-      <h1 className="bold-h1 h1-bold">Non-prose H1</h1>
     </div>
   );
 }
